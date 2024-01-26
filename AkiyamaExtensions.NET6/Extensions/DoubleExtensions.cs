@@ -42,7 +42,7 @@
         /// <param name="minValue">The minimum value allowed</param>
         /// <param name="maxValue">The maximum value allowed</param>
         /// <returns><paramref name="minValue"/> if the current <see cref="double"/> is less than <paramref name="minValue"/>, <paramref name="maxValue"/> if the current <see cref="double"/> is greater than <paramref name="maxValue"/>, or the current <see cref="double"/> if neither.</returns>
-        public static double Clamp(double i, double minValue, double maxValue)
+        public static double Clamp(this double i, double minValue, double maxValue)
         {
             if (i < minValue) { return minValue; }
             else if (i > maxValue) { return maxValue; }

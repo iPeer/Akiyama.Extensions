@@ -43,7 +43,7 @@
         /// <param name="minValue">The minimum value allowed</param>
         /// <param name="maxValue">The maximum value allowed</param>
         /// <returns><paramref name="minValue"/> if the current <see cref="float"/> is less than <paramref name="minValue"/>, <paramref name="maxValue"/> if the current <see cref="float"/> is greater than <paramref name="maxValue"/>, or the current <see cref="float"/> if neither.</returns>
-        public static float Clamp(float i, float minValue, float maxValue)
+        public static float Clamp(this float i, float minValue, float maxValue)
         {
             if (i < minValue) { return minValue; }
             else if (i > maxValue) { return maxValue; }

@@ -43,7 +43,7 @@
         /// <param name="minValue">The minimum value allowed</param>
         /// <param name="maxValue">The maximum value allowed</param>
         /// <returns><paramref name="minValue"/> if the current <see cref="decimal"/> is less than <paramref name="minValue"/>, <paramref name="maxValue"/> if the current <see cref="decimal"/> is greater than <paramref name="maxValue"/>, or the current <see cref="decimal"/> if neither.</returns>
-        public static decimal Clamp(decimal i, decimal minValue, decimal maxValue)
+        public static decimal Clamp(this decimal i, decimal minValue, decimal maxValue)
         {
             if (i < minValue) { return minValue; }
             else if (i > maxValue) { return maxValue; }

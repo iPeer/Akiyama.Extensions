@@ -43,7 +43,7 @@
         /// <param name="minValue">The minimum value allowed</param>
         /// <param name="maxValue">The maximum value allowed</param>
         /// <returns><paramref name="minValue"/> if the current <see cref="int"/> is less than <paramref name="minValue"/>, <paramref name="maxValue"/> if the current <see cref="int"/> is greater than <paramref name="maxValue"/>, or the current <see cref="int"/> if neither.</returns>
-        public static int Clamp(int i, int minValue, int maxValue)
+        public static int Clamp(this int i, int minValue, int maxValue)
         {
             if (i < minValue) { return minValue; }
             else if (i > maxValue) { return maxValue; }
