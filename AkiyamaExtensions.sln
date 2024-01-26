@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkiyamaExtensions.NETFramework", "AkiyamaExtensions.NETFramework\AkiyamaExtensions.NETFramework.csproj", "{509CA83B-C26F-4C28-AE64-D3A40E429628}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkiyamaExtensions.NET6", "AkiyamaExtensions.NET6\AkiyamaExtensions.NET6.csproj", "{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{509CA83B-C26F-4C28-AE64-D3A40E429628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509CA83B-C26F-4C28-AE64-D3A40E429628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509CA83B-C26F-4C28-AE64-D3A40E429628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509CA83B-C26F-4C28-AE64-D3A40E429628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82D348D2-7F52-4AFC-868B-FF5AAA037330}
+	EndGlobalSection
+EndGlobal
