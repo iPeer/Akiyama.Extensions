@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System;
+using AkiyamaExtensions.Helpers;
+using System.Linq;
 
 namespace AkiyamaExtensions.Extensions
 {
@@ -34,6 +36,19 @@ namespace AkiyamaExtensions.Extensions
         public static T Choice<T>(this IEnumerable<T> enumerable, Random random)
         {
             return random.Choice(enumerable);
+        }
+
+        public static T SecureChoice<T>(this IEnumerable<T> enumerable)
+        {
+            // UTODO: Implement non-NET Framework version
+#if NETSTANDARD2_1_OR_GREATER
+#else
+            using (SecureRandom sr = new SecureRandom())
+            {
+                int index = sr.Next(enumerable.Count(), inclusive: false);
+                return enumerable.ElementAt(index);
+            }
+#endif
         }
 
     }
