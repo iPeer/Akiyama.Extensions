@@ -1,12 +1,10 @@
-﻿using System;
+﻿using AkiyamaExtensions.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace AkiyamaExtensions.Extensions
 {
-
-    // TODO: Add a secure random generator
-    // https://stackoverflow.com/questions/42426420/how-can-i-generate-a-cryptographically-secure-random-integer-within-a-range
 
     public static partial class RandomExtensions
     {
@@ -18,7 +16,7 @@ namespace AkiyamaExtensions.Extensions
         /// <typeparam name="T"></typeparam>
         /// <param name="random"></param>
         /// <param name="choices">The <see cref="IEnumerable{T}"/> to pick a value from</param>
-        /// <returns>A random entry from the <paramref name="choices"/> <see cref="IEnumerable{T}"/></returns>
+        /// <returns>A random entry from <paramref name="choices"/>.</returns>
         /// <exception cref="ArgumentException"></exception>
         public static T Choice<T>(this Random random, IEnumerable<T> choices)
         {
@@ -26,6 +24,19 @@ namespace AkiyamaExtensions.Extensions
             if (choices.Count() == 1) { return choices.First(); }
             int index = random.Next(choices.Count());
             return choices.ElementAt(index);
+        }
+
+        /// <inheritdoc cref="Choice{T}(Random, IEnumerable{T})"/>
+        public static T SecureChoice<T>(this Random r, IEnumerable<T> choices)
+        {
+            if (choices.Count() == 0) { throw new ArgumentException("Provided list of options was empty."); }
+            if (choices.Count() == 1) { return choices.First(); }
+
+            using (SecureRandom sr = new SecureRandom())
+            {
+                int index = sr.Next(choices.Count(), inclusive: false);
+                return choices.ElementAt(index);
+            }
         }
 
         /// <summary>

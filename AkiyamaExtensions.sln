@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkiyamaExtensions.NETFramew
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkiyamaExtensions.NET6", "AkiyamaExtensions.NET6\AkiyamaExtensions.NET6.csproj", "{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETFramework.Tests", "NETFramework.Tests\NETFramework.Tests.csproj", "{2BFC0450-17C5-42C4-AEB1-8F7ABA54DC00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8718EB9-FE5C-46A4-B84C-EF5AD71696A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFC0450-17C5-42C4-AEB1-8F7ABA54DC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFC0450-17C5-42C4-AEB1-8F7ABA54DC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFC0450-17C5-42C4-AEB1-8F7ABA54DC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFC0450-17C5-42C4-AEB1-8F7ABA54DC00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
