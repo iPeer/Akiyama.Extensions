@@ -50,6 +50,7 @@
     <Compile Include="Extensions\DecimalExtensions.cs" />
     <Compile Include="Extensions\RandomExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\WinForms\FormExtensions.cs" />
     <Compile Include="Extensions\WinForms\ProgressBarExtensions.cs" />
     <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
