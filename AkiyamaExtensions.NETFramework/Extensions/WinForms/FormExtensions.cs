@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace AkiyamaExtensions.Extensions.WinForms
@@ -7,6 +6,12 @@ namespace AkiyamaExtensions.Extensions.WinForms
     public static partial class FormExtensions
     {
 
+        /// <summary>
+        /// A list of all the controls in the <see cref="Form"/>
+        /// <br /><b>Note</b>: This method will not return items within <see cref="ContextMenuStrip"/> or <see cref="MenuStrip"/>.
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns>A list of all <see cref="Control"/>s within a <see cref="Form"/>.</returns>
         public static List<Control> GetAllControls(this Form form)
         {
             List<Control> controls = new List<Control>();
@@ -18,28 +23,31 @@ namespace AkiyamaExtensions.Extensions.WinForms
             return controls;
         }
 
-        // UNTESTED
-        public static List<T> GetAllControls<T>(this Form form)
+        /// <summary>
+        /// A list of all the controls in the <see cref="Form"/> which match the type of <see cref="{T}"/>
+        /// <br /><b>Note</b>: This method will not return items within <see cref="ContextMenuStrip"/> or <see cref="MenuStrip"/>.
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns>A <see cref="List"/> of all <see cref="Control"/>s within a <see cref="Form"/> that match the type of <see cref="{T}"/></returns>
+        public static List<Control> GetAllControls<T>(this Form form)
         {
-            List<T> controls = new List<T>();
+            List<Control> controls = new List<Control>();
             foreach (Control control in form.Controls)
             {
-                if (control is T) { controls.Add((T)Convert.ChangeType(control, typeof(T))); }
+                if (control is T) { controls.Add(control); }
                 controls.AddRange(GetControlsRecursive<T>(control));
             }
             return controls;
         }
 
-        // UNTESTED
-        private static List<T> GetControlsRecursive<T>(Control c)
+        private static List<Control> GetControlsRecursive<T>(Control c)
         {
-            List<T> list = new List<T>();
+            List<Control> list = new List<Control>();
             foreach (Control control in c.Controls)
             {
                 if (control is T)
                 {
-                    T cn = (T)Convert.ChangeType(control, typeof(T));
-                    list.Add(cn);
+                    list.Add(control);
                 }
                 list.AddRange(GetControlsRecursive<T>(control));
             }
