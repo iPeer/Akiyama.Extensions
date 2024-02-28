@@ -67,15 +67,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AkiyamaExtensions.NETFramework\AkiyamaExtensions.NETFramework.csproj">
-      <Project>{509ca83b-c26f-4c28-ae64-d3a40e429628}</Project>
-      <Name>AkiyamaExtensions.NETFramework</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="WinFormsTests\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Akiyama.Extensions.NETFramework\Akiyama.Extensions.NETFramework.csproj">
+      <Project>{509ca83b-c26f-4c28-ae64-d3a40e429628}</Project>
+      <Name>Akiyama.Extensions.NETFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

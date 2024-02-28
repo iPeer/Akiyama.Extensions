@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NETFramework.Tests.WinFormsTests;
 using System.Windows.Forms;
-using AkiyamaExtensions.Extensions.WinForms;
 using System.Collections.Generic;
+using Akiyama.Extensions.WinForms;
 
 namespace NETFramework.Tests
 {

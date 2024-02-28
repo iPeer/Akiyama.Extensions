@@ -1,5 +1,5 @@
-﻿using AkiyamaExtensions.Extensions;
-using AkiyamaExtensions.Helpers;
+﻿using Akiyama.Extensions;
+using Akiyama.Helpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
