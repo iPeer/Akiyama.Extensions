@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace AkiyamaExtensions.Extensions.WinForms
+namespace Akiyama.Extensions.WinForms
 {
 
     public enum ProgressBarState

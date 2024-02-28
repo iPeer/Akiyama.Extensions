@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AkiyamaExtensions.Extensions
+﻿namespace Akiyama.Extensions
 {
     public static partial class StringExtensions
     {

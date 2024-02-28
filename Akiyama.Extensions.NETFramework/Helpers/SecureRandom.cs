@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace AkiyamaExtensions.Helpers
+namespace Akiyama.Helpers
 {
     /// <summary>
     /// Represents a cryptographically safe pseudo-random number generator.

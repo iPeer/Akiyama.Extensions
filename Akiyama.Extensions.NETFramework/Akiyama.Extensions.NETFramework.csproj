@@ -7,8 +7,8 @@
     <ProjectGuid>{509CA83B-C26F-4C28-AE64-D3A40E429628}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AkiyamaExtensions</RootNamespace>
-    <AssemblyName>AkiyamaExtensions.NETFramework</AssemblyName>
+    <RootNamespace>Akiyama</RootNamespace>
+    <AssemblyName>Akiyama.Extensions.NETFramework</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

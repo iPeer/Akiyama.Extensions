@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System;
-
-namespace AkiyamaExtensions.Extensions
+﻿namespace Akiyama.Extensions
 {
     public static partial class IEnumerableExtensions
     {

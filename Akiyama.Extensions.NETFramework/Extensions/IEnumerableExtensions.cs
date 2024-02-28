@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System;
-using AkiyamaExtensions.Helpers;
 using System.Linq;
 
-namespace AkiyamaExtensions.Extensions
+namespace Akiyama.Extensions
 {
     public static partial class IEnumerableExtensions
     {
